@@ -1,7 +1,7 @@
 .menu-title h1{
   color: white;
-  margin: 1.2rem 0 1.2rem 0;
-  font-size: 9rem;
+  margin: .2rem 0 .2rem 0;
+  font-size: 7rem;
   display: flex;
   justify-content: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -9,6 +9,14 @@
 }
 
 
-.menu-title hr{
-  margin: 1rem 0 1rem 0;
+.menu-title .div_hr {
+  border-top: solid .13rem #222222;
+  border-radius: 100%;
+  margin: 1rem 1rem 0 1rem;
+}
+
+.menu-title .div_hr-2 {
+  border-top: solid .13rem #222222;
+  border-radius: 100%;
+  margin: 0 1rem 2rem 1rem;
 }

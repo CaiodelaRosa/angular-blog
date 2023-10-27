@@ -1,0 +1,27 @@
+.main-news_container{
+  width: 22rem;
+  height: 25rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.main-news_data{
+  font-size: .7rem;
+  color: #717171;
+}
+
+.main-news_title{
+  margin-top: 1.2rem;
+  font-size: .7rem;
+}
+
+.main-news_resume{
+  margin-top: .8rem;
+  color: #717171;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

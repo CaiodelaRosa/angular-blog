@@ -1,0 +1,17 @@
+.articles{
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical_hr{
+  border-left: solid .13rem #222222;
+  border-radius: 100%;
+}
+
+.main-article {
+  margin: 0 5rem 0 12rem;
+}
+
+app-menu-bar {
+  margin: 1rem 0 0 0;
+}

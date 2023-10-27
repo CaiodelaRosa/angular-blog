@@ -6,7 +6,8 @@ import { RouterModule } from '@angular/router';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { MainTitleComponent } from './components/main-title/main-title.component';
 import { MainNewsComponent } from './components/main-news/main-news.component';
-import { SecondaryNewsComponent } from './components/secondary-news/secondary-news.component'
+import { SecondaryNewsComponent } from './components/secondary-news/secondary-news.component';
+import { HomeComponent } from './pages/home/home.component'
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { SecondaryNewsComponent } from './components/secondary-news/secondary-ne
     MenuBarComponent,
     MainTitleComponent,
     MainNewsComponent,
-    SecondaryNewsComponent
+    SecondaryNewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

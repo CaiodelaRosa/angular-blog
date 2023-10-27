@@ -1,0 +1,23 @@
+.menu-bar_content button{
+  border: none;
+}
+
+.menu-bar_content img {
+  border-radius: 1rem;
+}
+
+.menu-bar_content img:hover {
+  cursor: pointer;
+  opacity: .7;
+}
+
+.menu-bar_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 30rem 0 30rem;
+}
+
+.menu-bar_content h1 {
+  font-size: 1rem;
+  margin: .5rem 0 0 0;
+}
