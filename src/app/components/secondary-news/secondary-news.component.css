@@ -6,13 +6,13 @@
   height: 6.4rem;
 }
 
-.secondary-news_data{
+ a>.secondary-news_separetor>.secondary-news_data{
   margin: .1rem 0 0 1rem;
   font-size: .7rem;
   color: #717171;
 }
 
-.secondary-news_title h1{
+a>.secondary-news_separetor>.secondary-news_title h1{
   margin: .4rem 0 0 1rem;
   font-size: .9rem;
 }
@@ -22,4 +22,10 @@
   border-radius: 100%;
   margin: 1rem 0 1rem 4rem;
   width: 32rem;
+}
+
+a{
+  display: flex;
+  color: white;
+  text-decoration: none;
 }
