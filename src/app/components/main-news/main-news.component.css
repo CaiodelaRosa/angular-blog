@@ -14,11 +14,16 @@
 .main-news_title{
   margin-top: 1.2rem;
   font-size: .7rem;
+  text-transform: uppercase;
 }
 
 .main-news_resume{
   margin-top: .8rem;
   color: #717171;
+}
+
+.main-news_resume::first-letter{
+  text-transform: uppercase;
 }
 
 a {

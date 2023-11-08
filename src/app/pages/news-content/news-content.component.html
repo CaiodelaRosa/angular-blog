@@ -1,0 +1,23 @@
+
+<app-menu-bar></app-menu-bar>
+
+<div class="hr"></div>
+
+<div class="main-container">
+
+  <div class="news-title">
+    <h1>{{newsTitle}}</h1>
+  </div>
+  <div class="news-subtitle">
+    <h2>{{newsSubtitle}}</h2>
+  </div>
+  <div class="news-image">
+    <img src="{{newsImage}}" alt="">
+  </div>
+  <div class="news-data"><p>21 de novembro de 2023</p></div>
+  <div class="news-content"><p>{{newsContent}}</p></div>
+
+  <div class="news-back">
+    <a [routerLink]="['']">&#8592; Back To Home</a>
+  </div>
+</div>

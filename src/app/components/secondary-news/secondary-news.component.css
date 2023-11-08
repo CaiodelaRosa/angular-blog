@@ -12,9 +12,17 @@
   color: #717171;
 }
 
+img{
+  height: 6.25rem;
+  width: 12.5rem;
+  max-height: 6.25rem;
+  max-width: 14rem;
+}
+
 a>.secondary-news_separetor>.secondary-news_title h1{
   margin: .4rem 0 0 1rem;
   font-size: .9rem;
+  text-transform: uppercase;
 }
 
 .div_hr {

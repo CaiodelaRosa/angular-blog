@@ -1,17 +1,17 @@
 <div class="secondary-news_container">
-<a href="">
+<a [routerLink]="['news-content', 'Id']">
   <div class="secondary-news_image">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE3CETL_OertJKScoHfblxs6CBrKGVCmVESw&usqp=CAU"
+    <img src="{{ secondaryImage }}"
     alt=""
     height="100rem">
   </div>
 
   <div class="secondary-news_separetor">
   <div class="secondary-news_data">
-    <p>Novembro 21, 2023</p>
+    <p>{{secondaryData}}</p>
   </div>
   <div class="secondary-news_title">
-    <h1>Titulo das noticias secundarias aparecem aqui</h1>
+    <h1>{{ secondaryTitle }}</h1>
   </div>
 
 </div>
