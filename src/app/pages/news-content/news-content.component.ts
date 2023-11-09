@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { dataFake } from 'src/app/data/dataFake';
 
 
 @Component({
@@ -9,11 +10,11 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NewsContentComponent implements OnInit {
 
-  newsImage:string = ""
-  newsTitle:string = ""
-  newsSubtitle:string = ""
-  newsContent:string = ""
-  private Id:string | null = ""
+  newsImage:string | null  = ""
+  newsTitle:string | null  = ""
+  newsSubtitle:string | null  = ""
+  newsContent:string | null = ""
+  private Id:string = ""
 
   newsData = Intl.DateTimeFormat("pt-BR", {year: 'numeric', month: 'long', day: 'numeric'}).format(new Date());
 
@@ -23,29 +24,23 @@ export class NewsContentComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(value =>
+      this.Id = value.get("Id") as string
+      )
 
-    this.route.params.subscribe(params => {
-      this.Id = params['id'];
+      this.setValuesToComponent(this.Id)
+  };
 
-      // Use the RouterStateSnapshot to access the state
-      const routerState = this.router.routerState.snapshot;
-      if (routerState.root.firstChild) {
-        const state = routerState.root.firstChild.firstChild?.data;
-        if (state) {
-          this.newsImage = state.newsImage;
-          this.newsTitle = state.newsTitle;
-          this.newsSubtitle = state.newsSubtitle;
-          this.newsContent = state.newsContent;
-        }
+  setValuesToComponent(id:string){
+    const result = dataFake.filter(article => article.id == id)[0]
 
-    // Carregue os detalhes da notícia, se necessário
-    this.loadNewsDetails(this.Id);
-  });
+    this.newsTitle = result.title
+    this.newsSubtitle = result.subtitle
+    this.newsContent = result.content
+    this.newsImage = result.image
 
   }
 
-  loadNewsDetails(id: string) {
-
   }
 
-}
+

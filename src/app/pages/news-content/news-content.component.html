@@ -12,12 +12,12 @@
     <h2>{{newsSubtitle}}</h2>
   </div>
   <div class="news-image">
-    <img src="{{newsImage}}" alt="">
+    <img src="{{ newsImage }}" alt="">
   </div>
-  <div class="news-data"><p>21 de novembro de 2023</p></div>
+  <div class="news-data"><p>{{ newsData }}</p></div>
   <div class="news-content"><p>{{newsContent}}</p></div>
 
   <div class="news-back">
-    <a [routerLink]="['']">&#8592; Back To Home</a>
+    <button [routerLink]="['']">Back To Home</button>
   </div>
 </div>
